@@ -1,3 +1,6 @@
+import punchImg from "../assets/punch.png";
+import desireImg from "../assets/desire.png";
+import ashoktruck from "../assets/ashoktruck.png";
 export type Vehicle = {
   id: string;
   name: string;
@@ -15,7 +18,7 @@ export const fleet: Vehicle[] = [
     type: "cab",
     category: "Hatchback",
     capacity: "4 passengers",
-    image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80",
+    image: punchImg,
     features: ["AC", "2 bags", "Fuel efficient"],
   },
   {
@@ -24,8 +27,17 @@ export const fleet: Vehicle[] = [
     type: "cab",
     category: "Sedan",
     capacity: "4 passengers",
-    image: "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=800&q=80",
+    image: desireImg,
     features: ["AC", "3 bags", "Comfort ride"],
+  },
+  {
+    id: "ashok-leyland",
+    name: "Ashok Leyland 1616",
+    type: "truck",
+    category: "Heavy",
+    capacity: "Up to 16 tonne",
+    image: ashoktruck,
+    features: ["Long-haul", "Insured cargo", "Pan-India"],
   },
   {
     id: "innova",
@@ -72,13 +84,5 @@ export const fleet: Vehicle[] = [
     image: "https://images.unsplash.com/photo-1586191582056-b7f0b9b1c4d8?auto=format&fit=crop&w=800&q=80",
     features: ["Closed body", "GPS tracked", "Office shifting"],
   },
-  {
-    id: "ashok-leyland",
-    name: "Ashok Leyland 1616",
-    type: "truck",
-    category: "Heavy",
-    capacity: "Up to 16 tonne",
-    image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=800&q=80&sat=-20",
-    features: ["Long-haul", "Insured cargo", "Pan-India"],
-  },
+  
 ];
